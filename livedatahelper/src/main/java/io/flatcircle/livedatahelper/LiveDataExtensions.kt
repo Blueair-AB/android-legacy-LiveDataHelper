@@ -18,7 +18,7 @@ fun <T> LiveData<T>.observe(owner: LifecycleOwner, lambda: (it: T) -> Unit) {
 /**
  * Observes for all non-null events
  */
-fun <T> LiveData<T>.nonNullObserve(owner: LifecycleOwner, lambda: (t: T) -> Unit) {
+fun <T> LiveData<T>.observeNonNull(owner: LifecycleOwner, lambda: (t: T) -> Unit) {
     this.observe(owner, Observer {
         it?.let(lambda)
     })

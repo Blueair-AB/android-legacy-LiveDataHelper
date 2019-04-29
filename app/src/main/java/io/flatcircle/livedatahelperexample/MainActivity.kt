@@ -6,7 +6,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import com.google.android.material.snackbar.Snackbar
-import io.flatcircle.livedatahelper.nonNullObserve
+import io.flatcircle.livedatahelper.observeNonNull
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun observeLiveData() {
-        liveData.nonNullObserve(this) {
+        liveData.observeNonNull(this) {
             // Do something
         }
     }

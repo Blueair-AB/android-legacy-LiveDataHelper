@@ -27,7 +27,7 @@ publish {
     groupId = 'io.flatcircle'
     repoName = 'LiveDataHelper'
     artifactId = 'livedatahelper'
-    publishVersion = '0.0.1'
+    publishVersion = '0.0.2'
     bintrayUser = 'chesterflatcircle'
     bintrayKey = System.getenv("BINTRAY_KEY")
     desc = 'A list of small kotlin extension functions, utility functions and delegates for LiveData'
